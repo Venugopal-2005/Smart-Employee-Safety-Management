@@ -1,3 +1,63 @@
+
+
+# Smart Vehicle & Helmet Detection System
+
+## Overview
+This project is a real-time AI-based system to monitor vehicles at an entry gate.  
+It detects vehicles, persons, helmets, and number plates, decides gate access, and logs events to a database.
+
+## Features
+- Live IP camera (RTSP) streaming
+- Vehicle & person detection
+- Helmet detection for two-wheelers
+- Automatic number plate recognition (OCR)
+- Gate decision (ALLOW / BLOCK)
+- MySQL database logging
+- Real-time web-based display
+
+## Tech Stack
+- Backend: Python, Flask
+- AI Models: YOLOv8 (vehicle/person), custom YOLO (helmet & plate)
+- OCR: EasyOCR
+- Database: MySQL
+- Streaming: HTTP MJPEG
+- Camera: IP Camera (RTSP)
+
+## Decision Logic
+- Two-wheeler: Helmet + Number Plate → ALLOW
+- Four-wheeler: Number Plate → ALLOW
+
+## How to Run
+1. Install dependencies
+2. Configure RTSP camera URL
+3. Start backend:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
